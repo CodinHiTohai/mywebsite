@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact CodingHitoHai — Ask questions, share feedback, or just say hello. We'd love to hear from you!" />
+  <title>Contact — CodingHitoHai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>💻</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="CodingHitoHai Home">
+        <div class="logo-icon" aria-hidden="true">💻</div>
+        <span>CodingHitoHai</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="tutorials.html" role="menuitem">Tutorials</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero" aria-label="Contact Page Hero">
+    <div class="container page-hero-content">
+      <div class="badge reveal">📬 We're Listening</div>
+      <h1 class="reveal reveal-delay-1"><span class="text-gradient">Get in Touch</span></h1>
+      <p class="reveal reveal-delay-2">Have a question, a suggestion, or just want to say hi? We'd love to hear from you!</p>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section class="section-pad" id="contact-section" aria-label="Contact Form and Info">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info reveal">
+          <div class="badge">💬 Reach Out</div>
+          <h2>Let's <span class="text-gradient">Connect</span></h2>
+          <p class="lead">Whether you're stuck on a concept, want more tutorials on a specific topic, or just want to say hello — drop us a message!</p>
+
+          <div class="contact-links" aria-label="Contact Details">
+
+            <div class="contact-link">
+              <div class="contact-link-icon ci-purple" aria-hidden="true">📧</div>
+              <div class="contact-link-text">
+                <div class="link-label">Email Us</div>
+                <div class="link-value">hello@codinghitohai.in</div>
+              </div>
+            </div>
+
+            <div class="contact-link">
+              <div class="contact-link-icon ci-cyan" aria-hidden="true">📢</div>
+              <div class="contact-link-text">
+                <div class="link-label">Telegram Group</div>
+                <div class="link-value">t.me/codinghitohai</div>
+              </div>
+            </div>
+
+            <div class="contact-link">
+              <div class="contact-link-icon ci-green" aria-hidden="true">▶</div>
+              <div class="contact-link-text">
+                <div class="link-label">YouTube Channel</div>
+                <div class="link-value">CodingHitoHai</div>
+              </div>
+            </div>
+
+          </div><!-- /contact-links -->
+
+          <!-- FAQ Mini -->
+          <div style="margin-top: 40px;">
+            <h3 style="font-size:1.05rem;margin-bottom:20px;color:var(--text-secondary);">Frequently Asked</h3>
+            <div style="display:flex;flex-direction:column;gap:14px;">
+
+              <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:16px 20px;cursor:pointer;">
+                <summary style="font-weight:600;font-size:0.95rem;list-style:none;cursor:pointer;display:flex;justify-content:space-between;">
+                  Are all tutorials really free? <span style="color:var(--accent-secondary);">+</span>
+                </summary>
+                <p style="margin-top:12px;font-size:0.9rem;">Yes! 100% free, forever. No hidden costs, no premium tier.</p>
+              </details>
+
+              <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:16px 20px;cursor:pointer;">
+                <summary style="font-weight:600;font-size:0.95rem;list-style:none;cursor:pointer;display:flex;justify-content:space-between;">
+                  Can I request a tutorial topic? <span style="color:var(--accent-secondary);">+</span>
+                </summary>
+                <p style="margin-top:12px;font-size:0.9rem;">Absolutely! Use the form to tell us what you'd like to learn next.</p>
+              </details>
+
+              <details style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:16px 20px;cursor:pointer;">
+                <summary style="font-weight:600;font-size:0.95rem;list-style:none;cursor:pointer;display:flex;justify-content:space-between;">
+                  How quickly do you reply? <span style="color:var(--accent-secondary);">+</span>
+                </summary>
+                <p style="margin-top:12px;font-size:0.9rem;">We typically reply within 24–48 hours. Join Telegram for faster replies!</p>
+              </details>
+
+            </div>
+          </div>
+
+        </div><!-- /contact-info -->
+
+        <!-- Right: Contact Form -->
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form-card" id="contactFormCard">
+            <h2 class="form-title">✉️ Send a Message</h2>
+
+            <form id="contactForm" novalidate aria-label="Contact Form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Your Name <span style="color:var(--accent-pink)">*</span></label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    class="form-control"
+                    placeholder="e.g. Rahul Sharma"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address <span style="color:var(--accent-pink)">*</span></label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    class="form-control"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input
+                  type="text"
+                  id="contactSubject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="e.g. Request for Python OOP tutorial"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactTopic">Topic of Interest</label>
+                <select id="contactTopic" name="topic" class="form-control">
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="dsa">Data Structures &amp; Algorithms</option>
+                  <option value="java">Java Programming</option>
+                  <option value="sql">SQL &amp; Databases</option>
+                  <option value="python">Python</option>
+                  <option value="web">Web Development</option>
+                  <option value="cpp">C++</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Your Message <span style="color:var(--accent-pink)">*</span></label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-control"
+                  placeholder="Tell us what's on your mind — questions, feedback, tutorial requests…"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitContactBtn" style="width:100%;justify-content:center;">
+                <span class="btn-icon">🚀</span> Send Message
+              </button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="formSuccess" class="form-success">
+              <div class="success-icon">🎉</div>
+              <h3>Message Received!</h3>
+              <p style="color:var(--text-secondary);">Thanks for reaching out! We'll get back to you within 24–48 hours. <br /><br /> Meanwhile, join our <a href="#" style="color:var(--accent-secondary);">Telegram group</a> for instant help!</p>
+              <br/>
+              <a href="tutorials.html" class="btn btn-primary" style="margin-top:8px;justify-content:center;">
+                <span class="btn-icon">📚</span> Browse Tutorials
+              </a>
+            </div>
+
+          </div><!-- /contact-form-card -->
+        </div>
+
+      </div><!-- /contact-wrapper -->
+    </div>
+  </section>
+
+  <!-- ======= SOCIAL CTA ======= -->
+  <section class="section-pad" style="background:var(--bg-secondary);" aria-label="Social Links">
+    <div class="container text-center">
+      <h2 class="reveal">Find Us <span class="text-gradient">Everywhere</span></h2>
+      <p class="reveal reveal-delay-1" style="max-width:460px;margin:16px auto 40px;">Follow us for daily coding tips, new tutorial alerts, and community discussions.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal reveal-delay-2">
+        <a href="#" class="btn btn-outline" id="youtubeLink">▶ YouTube</a>
+        <a href="#" class="btn btn-outline" id="instagramLink">📷 Instagram</a>
+        <a href="#" class="btn btn-outline" id="telegramLink">📢 Telegram</a>
+        <a href="#" class="btn btn-outline" id="githubLink">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><div class="logo-icon" aria-hidden="true">💻</div><span>CodingHitoHai</span></div>
+          <p>Making programming simple and accessible for every beginner in India and beyond.</p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+            <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-btn" aria-label="GitHub">🐙</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tutorials</h4>
+          <ul class="footer-links">
+            <li><a href="tutorials.html">DSA</a></li>
+            <li><a href="tutorials.html">Java</a></li>
+            <li><a href="tutorials.html">SQL</a></li>
+            <li><a href="tutorials.html">Python</a></li>
+            <li><a href="tutorials.html">Web Dev</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Telegram Group</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 <a href="index.html">CodingHitoHai</a>. Made with ❤️ in India.</p>
+        <p>Designed for every beginner who believes <em>Coding Hito Hai!</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

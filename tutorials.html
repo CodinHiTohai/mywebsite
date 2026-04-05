@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse free coding tutorials on DSA, Java, SQL, Python, Web Development and C++ at CodingHitoHai." />
+  <title>Tutorials — CodingHitoHai</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>💻</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 48px;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 8px 22px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1.5px solid var(--border-color);
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      font-family: var(--font-sans);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: rgba(124,58,237,0.15);
+      border-color: var(--border-hover);
+      color: var(--accent-secondary);
+    }
+    .tutorial-card { opacity: 1; transition: opacity 0.3s ease, transform 0.3s ease; }
+    .tutorial-card.hidden { opacity: 0; pointer-events: none; transform: scale(0.95); display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="CodingHitoHai Home">
+        <div class="logo-icon" aria-hidden="true">💻</div>
+        <span>CodingHitoHai</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="tutorials.html" role="menuitem">Tutorials</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero" aria-label="Tutorials Hero">
+    <div class="container page-hero-content">
+      <div class="badge reveal">📚 Learn at Your Pace</div>
+      <h1 class="reveal reveal-delay-1">Free <span class="text-gradient">Tutorials</span></h1>
+      <p class="reveal reveal-delay-2">Carefully crafted lessons from beginner to advanced — always clear, always free.</p>
+    </div>
+  </section>
+
+  <!-- ======= TUTORIALS ======= -->
+  <section class="section-pad" id="tutorials-section" aria-label="Tutorial Cards">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filterBar" role="group" aria-label="Filter Tutorials">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Topics</button>
+        <button class="filter-btn" data-filter="dsa" id="filterDSA">🔷 DSA</button>
+        <button class="filter-btn" data-filter="java" id="filterJava">☕ Java</button>
+        <button class="filter-btn" data-filter="sql" id="filterSQL">🗄️ SQL</button>
+        <button class="filter-btn" data-filter="python" id="filterPython">🐍 Python</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">🌐 Web Dev</button>
+        <button class="filter-btn" data-filter="cpp" id="filterCpp">⚙️ C++</button>
+      </div>
+
+      <!-- Tutorial Cards Grid -->
+      <div class="tutorials-grid" id="tutorialsGrid">
+
+        <!-- DSA -->
+        <article class="tutorial-card card-dsa reveal reveal-delay-1" data-category="dsa">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-purple"><span class="card-lang-icon">🔷</span> DSA</div>
+            <h3>Data Structures & Algorithms</h3>
+            <span class="card-level">⭐ Beginner to Advanced</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Arrays, linked lists, stacks, queues, trees, graphs, sorting algorithms, and dynamic programming — the complete DSA guide.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 24 Lessons</span>
+              <span class="card-meta-item">⏱ 8 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Progress</span><span>Beginner</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-purple" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('🚀', 'Opening DSA Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- Java -->
+        <article class="tutorial-card card-java reveal reveal-delay-2" data-category="java">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-cyan"><span class="card-lang-icon">☕</span> Java</div>
+            <h3>Java Programming</h3>
+            <span class="card-level">🌱 Beginner Friendly</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Start from Hello World, master OOP concepts, collections framework, multithreading, file I/O, and modern Java features.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 18 Lessons</span>
+              <span class="card-meta-item">⏱ 6 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Content</span><span>Beginner</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-cyan" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('☕', 'Opening Java Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- SQL -->
+        <article class="tutorial-card card-sql reveal reveal-delay-3" data-category="sql">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-green"><span class="card-lang-icon">🗄️</span> SQL</div>
+            <h3>SQL & Databases</h3>
+            <span class="card-level">🌱 Beginner Friendly</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Learn SQL from scratch — SELECT queries, JOINs, GROUP BY, subqueries, stored procedures, and database design.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 15 Lessons</span>
+              <span class="card-meta-item">⏱ 5 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Content</span><span>Beginner</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-green" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('🗄️', 'Opening SQL Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- Python -->
+        <article class="tutorial-card card-python reveal reveal-delay-1" data-category="python">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-yellow"><span class="card-lang-icon">🐍</span> Python</div>
+            <h3>Python for Beginners</h3>
+            <span class="card-level">🌱 Absolute Beginner</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>The easiest language to start with! Variables, loops, functions, lists, dictionaries, file handling, and intro to libraries.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 20 Lessons</span>
+              <span class="card-meta-item">⏱ 7 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Content</span><span>Beginner</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-yellow" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('🐍', 'Opening Python Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- Web Dev -->
+        <article class="tutorial-card card-web reveal reveal-delay-2" data-category="web">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-pink"><span class="card-lang-icon">🌐</span> Web Dev</div>
+            <h3>Web Development</h3>
+            <span class="card-level">🌱 Beginner Friendly</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>HTML5, CSS3, JavaScript, responsive design, Flexbox, Grid, DOM manipulation, and building your first website.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 22 Lessons</span>
+              <span class="card-meta-item">⏱ 9 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Content</span><span>Beginner</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-pink" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('🌐', 'Opening Web Dev Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+        <!-- C++ -->
+        <article class="tutorial-card card-cpp reveal reveal-delay-3" data-category="cpp">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-red"><span class="card-lang-icon">⚙️</span> C++</div>
+            <h3>C++ Programming</h3>
+            <span class="card-level">🔶 Intermediate</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Pointers, memory management, STL library, OOP in C++, templates, and competitive programming tricks.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 16 Lessons</span>
+              <span class="card-meta-item">⏱ 6 hrs</span>
+            </div>
+            <div class="card-progress">
+              <div class="progress-label"><span>Course Content</span><span>Intermediate</span></div>
+              <div class="progress-bar"><div class="progress-fill fill-red" style="width: 0%" data-width="100%"></div></div>
+            </div>
+            <button class="btn-card" onclick="showToast('⚙️', 'Opening C++ Tutorial...')">Start Learning <span>→</span></button>
+          </div>
+        </article>
+
+      </div><!-- /tutorials-grid -->
+
+      <!-- Empty State (shown when filter returns nothing) -->
+      <div id="emptyState" style="display:none;text-align:center;padding:80px 0;">
+        <div style="font-size:3rem;margin-bottom:16px;">🔍</div>
+        <h3>No tutorials found</h3>
+        <p style="margin-top:8px;">Try selecting a different filter above.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= CTA ======= -->
+  <section class="section-pad" style="background:var(--bg-secondary);" aria-label="Newsletter CTA">
+    <div class="container text-center">
+      <h2 class="reveal">Want New <span class="text-gradient">Tutorials</span> First?</h2>
+      <p class="reveal reveal-delay-1" style="margin:16px auto 32px;max-width:480px;">Join our Telegram channel and be the first to know when new lessons drop.</p>
+      <a href="contact.html" class="btn btn-primary reveal reveal-delay-2">
+        <span class="btn-icon">📢</span> Join the Community
+      </a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><div class="logo-icon" aria-hidden="true">💻</div><span>CodingHitoHai</span></div>
+          <p>Making programming simple and accessible for every beginner in India and beyond.</p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+            <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-btn" aria-label="GitHub">🐙</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tutorials</h4>
+          <ul class="footer-links">
+            <li><a href="tutorials.html">DSA</a></li>
+            <li><a href="tutorials.html">Java</a></li>
+            <li><a href="tutorials.html">SQL</a></li>
+            <li><a href="tutorials.html">Python</a></li>
+            <li><a href="tutorials.html">Web Dev</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Telegram Group</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 <a href="index.html">CodingHitoHai</a>. Made with ❤️ in India.</p>
+        <p>Designed for every beginner who believes <em>Coding Hito Hai!</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* --- Tutorial Filter Logic --- */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.tutorial-card');
+    const emptyState = document.getElementById('emptyState');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+        let visible = 0;
+
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          if (match) {
+            card.classList.remove('hidden');
+            visible++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        emptyState.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+
+    /* --- Animate progress bars on scroll --- */
+    const progressObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const fills = entry.target.querySelectorAll('.progress-fill[data-width]');
+          fills.forEach(fill => {
+            fill.style.width = fill.dataset.width;
+          });
+          progressObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.tutorial-card').forEach(card => progressObserver.observe(card));
+  </script>
+</body>
+</html>

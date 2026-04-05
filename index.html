@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CodingHitoHai - Simple coding tutorials for everyone. Learn DSA, Java, SQL, Python, Web Development and more." />
+  <meta name="keywords" content="coding, tutorials, DSA, Java, SQL, Python, programming, learn to code" />
+  <title>CodingHitoHai — Simple Coding for Everyone</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>💻</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="CodingHitoHai Home">
+        <div class="logo-icon" aria-hidden="true">💻</div>
+        <span>CodingHitoHai</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="tutorials.html" role="menuitem">Tutorials</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero" aria-label="Hero Section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge" aria-hidden="true">🎯 Start Learning Today</div>
+
+        <h1 class="hero-tagline">
+          Simple Coding<br />
+          <span class="text-gradient">for Everyone</span>
+        </h1>
+
+        <p class="hero-desc">
+          Master <strong id="typingText" style="color:var(--accent-cyan);font-family:var(--font-mono);"></strong>&nbsp;with beginner-friendly tutorials, real-world examples, and a supportive community. No prior experience needed.
+        </p>
+
+        <div class="hero-cta">
+          <a href="tutorials.html" class="btn btn-primary" id="startLearningBtn">
+            <span class="btn-icon">🚀</span> Start Learning
+          </a>
+          <a href="about.html" class="btn btn-outline">
+            <span class="btn-icon">👋</span> About Us
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value" data-target="50" data-suffix="+">0+</div>
+            <div class="stat-label">Free Tutorials</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-target="10" data-suffix="K+">0K+</div>
+            <div class="stat-label">Students</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-target="6" data-suffix="">0</div>
+            <div class="stat-label">Topics Covered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Free Forever</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Code Window (visible on large screens) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="code-window">
+        <div class="code-window-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-window-title">HelloWorld.java</span>
+        </div>
+        <div class="code-body">
+          <code class="code-line"><span class="c-comment">// Welcome to CodingHitoHai!</span></code>
+          <code class="code-line"><span class="c-keyword">public class</span> <span class="c-funcname">HelloWorld</span> <span class="c-bracket">{</span></code>
+          <code class="code-line">&nbsp;&nbsp;<span class="c-keyword">public static void</span> <span class="c-funcname">main</span><span class="c-bracket">(</span>String<span class="c-bracket">[]</span> args<span class="c-bracket">) {</span></code>
+          <code class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;System.out.println<span class="c-bracket">(</span></code>
+          <code class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-string">"Coding Hito Hai! 🚀"</span></code>
+          <code class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-bracket">);</span></code>
+          <code class="code-line">&nbsp;&nbsp;<span class="c-bracket">}</span></code>
+          <code class="code-line"><span class="c-bracket">}</span></code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FEATURES ======= -->
+  <section class="section-pad" id="features" aria-label="Features">
+    <div class="container">
+      <div class="text-center">
+        <div class="badge reveal">✨ Why Choose Us</div>
+        <h2 class="section-title reveal reveal-delay-1">Everything You Need to <span class="text-gradient">Get Started</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2">We believe coding should be accessible, fun, and free for everyone — regardless of your background.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon purple">🎓</div>
+          <h3>Beginner Friendly</h3>
+          <p>Every tutorial starts from scratch. No jargon, no assumptions — just clear, simple explanations.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon cyan">⚡</div>
+          <h3>Quick Concepts</h3>
+          <p>Bite-sized lessons designed for busy learners. Learn a new concept in as little as 10 minutes.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon green">💡</div>
+          <h3>Real Examples</h3>
+          <p>Every topic includes hands-on code examples you can copy, run, and experiment with.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon pink">🆓</div>
+          <h3>100% Free</h3>
+          <p>All tutorials, examples, and resources are completely free. No paywalls, no subscriptions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= POPULAR TUTORIALS PREVIEW ======= -->
+  <section class="section-pad" id="popular" style="background: var(--bg-secondary);" aria-label="Popular Tutorials">
+    <div class="container">
+      <div class="text-center">
+        <div class="badge reveal">📚 Popular Topics</div>
+        <h2 class="section-title reveal reveal-delay-1">Start with the <span class="text-gradient">Best</span></h2>
+        <p class="section-subtitle reveal reveal-delay-2">Our most loved tutorials, hand-picked for beginners.</p>
+      </div>
+
+      <div class="tutorials-grid">
+        <!-- DSA -->
+        <article class="tutorial-card card-dsa reveal reveal-delay-1">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-purple">
+              <span class="card-lang-icon">🔷</span> DSA
+            </div>
+            <h3>Data Structures & Algorithms</h3>
+            <span class="card-level">⭐ Beginner to Advanced</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Arrays, linked lists, stacks, queues, trees, graphs, sorting, searching — everything you need to crack coding interviews.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 24 Lessons</span>
+              <span class="card-meta-item">⏱ 8 hrs</span>
+            </div>
+            <a href="tutorials.html" class="btn-card">Explore DSA <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Java -->
+        <article class="tutorial-card card-java reveal reveal-delay-2">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-cyan">
+              <span class="card-lang-icon">☕</span> Java
+            </div>
+            <h3>Java Programming</h3>
+            <span class="card-level">🌱 Beginner Friendly</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>From Hello World to OOP, collections, exception handling, and Java 17 features. Build solid foundations in Java.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 18 Lessons</span>
+              <span class="card-meta-item">⏱ 6 hrs</span>
+            </div>
+            <a href="tutorials.html" class="btn-card">Explore Java <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- SQL -->
+        <article class="tutorial-card card-sql reveal reveal-delay-3">
+          <div class="tutorial-card-header">
+            <div class="card-lang-badge badge-green">
+              <span class="card-lang-icon">🗄️</span> SQL
+            </div>
+            <h3>SQL & Databases</h3>
+            <span class="card-level">🌱 Beginner Friendly</span>
+          </div>
+          <div class="tutorial-card-body">
+            <p>Queries, joins, aggregations, indexes, and stored procedures. Learn to work with real databases like a pro.</p>
+            <div class="card-meta">
+              <span class="card-meta-item">📖 15 Lessons</span>
+              <span class="card-meta-item">⏱ 5 hrs</span>
+            </div>
+            <a href="tutorials.html" class="btn-card">Explore SQL <span>→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="tutorials.html" class="btn btn-primary reveal">
+          <span class="btn-icon">📚</span> View All Tutorials
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA STRIP ======= -->
+  <section class="section-pad" aria-label="Call To Action">
+    <div class="container text-center">
+      <h2 class="reveal">Ready to <span class="text-gradient">Start Coding</span>?</h2>
+      <p class="reveal reveal-delay-1" style="max-width:520px;margin:16px auto 36px;">Join thousands of students who are already learning and growing with CodingHitoHai — for free!</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tutorials.html" class="btn btn-primary reveal reveal-delay-2">
+          <span class="btn-icon">🎯</span> Get Started Free
+        </a>
+        <a href="contact.html" class="btn btn-outline reveal reveal-delay-3">
+          <span class="btn-icon">💬</span> Ask a Question
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon" aria-hidden="true">💻</div>
+            <span>CodingHitoHai</span>
+          </div>
+          <p>Making programming simple and accessible for every beginner in India and beyond.</p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="#" class="social-btn" aria-label="YouTube" title="YouTube">▶</a>
+            <a href="#" class="social-btn" aria-label="Instagram" title="Instagram">📷</a>
+            <a href="#" class="social-btn" aria-label="Twitter" title="Twitter">🐦</a>
+            <a href="#" class="social-btn" aria-label="GitHub" title="GitHub">🐙</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tutorials</h4>
+          <ul class="footer-links">
+            <li><a href="tutorials.html">DSA</a></li>
+            <li><a href="tutorials.html">Java</a></li>
+            <li><a href="tutorials.html">SQL</a></li>
+            <li><a href="tutorials.html">Python</a></li>
+            <li><a href="tutorials.html">Web Dev</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">YouTube Channel</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Telegram Group</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 <a href="index.html">CodingHitoHai</a>. Made with ❤️ in India.</p>
+        <p>Designed for every beginner who believes <em>Coding Hito Hai!</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
